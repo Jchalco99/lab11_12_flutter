@@ -1,13 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-/// Aplicación principal con estilo Cupertino (iOS) que muestra un sistema de menú
-/// con navegación entre pantallas.
 void main() {
   runApp(MyApp());
 }
 
-/// Widget raíz de la aplicación
-/// Define el tema y la página inicial con estilo Cupertino.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -176,7 +172,7 @@ class MenuItem {
   MenuItem({required this.nombre, required this.detalle, required this.icono});
 }
 
-/// Lista de elementos del menú principal actualizada a 3 opciones
+/// Lista de elementos del menú principal
 List<MenuItem> menuItems = [
   MenuItem(
     nombre: 'Preguntas Frecuentes',
@@ -241,7 +237,7 @@ List<MenuItem> preguntasFrecuentes = [
   ),
 ];
 
-/// Pantalla del menú principal con diseño Cupertino y 3 opciones
+/// Pantalla del menú principal y opciones
 class MainMenuPage extends StatelessWidget {
   const MainMenuPage({super.key});
 
